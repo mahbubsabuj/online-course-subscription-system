@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2> List of items </h2>
+<p>hello world</p>
+{% for i in courses %}
+    {{i.title}}
+    <br>
+    {{i.price}}
+    {{i.dis}}
+    
+{% endfor %}
+{% endblock content %}
